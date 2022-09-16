@@ -8,7 +8,8 @@ lazy val root = project
     name := "Bookman View",
     version := "0.1.0-SNAPSHOT",
 
-    scalaVersion := scala3Version
+    scalaVersion := scala3Version,
+    libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.3.0"
   )
 
 scalaJSUseMainModuleInitializer := true
