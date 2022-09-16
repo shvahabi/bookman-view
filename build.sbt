@@ -1,3 +1,5 @@
+enablePlugins(ScalaJSPlugin)
+
 val scala3Version = "3.2.0"
 
 lazy val root = project
@@ -8,3 +10,5 @@ lazy val root = project
 
     scalaVersion := scala3Version
   )
+
+scalaJSUseMainModuleInitializer := true
