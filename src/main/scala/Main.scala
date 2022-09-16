@@ -1,2 +1,9 @@
 @main def hello: Unit = 
-  println("Hello world!")
+  appendPar("Hello world!")
+
+def appendPar(text: String): Unit =
+  import org.scalajs.dom.document
+  val parNode = document.createElement("p")
+  parNode.textContent = text
+  document.body.appendChild(parNode)
+
