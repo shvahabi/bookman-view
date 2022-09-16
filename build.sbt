@@ -13,3 +13,4 @@ lazy val root = project
   )
 
 scalaJSUseMainModuleInitializer := true
+jsEnv := new org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv()
